@@ -1,0 +1,266 @@
+html {
+  background-color: #000000;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  color: rgb(213, 213, 213);
+  text-align: center;
+  margin-top: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.navbuttons {
+  color: rgb(213, 213, 213);
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: bold;
+  transition: 150ms;
+}
+.navbuttons:hover {
+  color: rgb(166, 84, 201);
+}
+
+#logo {
+  position: absolute;
+  left: 100px;
+}
+
+h1 {
+  color: white;
+  position: absolute;
+  font-size: 80px;
+  font-weight: lighter;
+  top: 200px;
+  width: 20px;
+  left: 100px;
+  transition: 150ms;
+  color: rgb(166, 84, 201);
+}
+
+p {
+  font-family: cursive;
+  color: rgba(255, 255, 255, 0.795);
+  position: absolute;
+  font-size: 18px;
+  font-weight: lighter;
+  top: 535px;
+  width: 40%;
+  left: 100px;
+  transition: 150ms;
+}
+
+#videomain {
+  width: 1000px;
+  position: absolute;
+  z-index: -1;
+  right: -200px;
+  top: 200px;
+}
+
+#container {
+  scroll-behavior: smooth;
+  overflow: scroll;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  position: absolute;
+}
+.container::-webkit-scrollbar-track, .container::-webkit-scrollbar {
+  display: none;
+}
+section::-webkit-scrollbar-track, section::-webkit-scrollbar {
+  display: none;
+}
+html::-webkit-scrollbar-track, html::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  height: 100%;
+  scroll-snap-align: start;
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  
+  width: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+
+#seemore {
+  position: absolute;
+  width: 150px;
+  background-color: rgb(166, 84, 201);
+  color: white;
+  height: 35px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 650px;
+  left: 100px;
+  transition: 150ms;
+  text-decoration: none;
+}
+
+#options {
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 210px;
+  left: 75px;
+}
+.optionsclass {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: bold;
+  transition: 150ms;
+}
+.optionsclass:hover {
+  color: rgb(166, 84, 201);
+  cursor: pointer;
+}
+
+#optionslist {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 300px;
+  display: none;
+}
+
+.examples {
+  width: 400px;
+  /* max-width: 600px; */
+  height: 300px;
+  border: 2px solid white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.informationstrip {
+  position: absolute;
+  height: 50px;
+  width: 400px;
+  background-color: rgb(166, 84, 201);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 75px;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 300px;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 18px;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  max-width: 500px;
+}
+
+input[type="submit"] {
+  background-color: rgb(166, 84, 201);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  #videomain {
+    display: none;
+  }
+  #optionslist {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 300px;
+  }
+  .examples {
+    width: 400px;
+    /* max-width: 600px; */
+    height: 300px;
+    border: 2px solid white;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 60px;
+    top: 120px;
+  }
+
+  p {
+    font-size: 15px;
+    top: 400px;
+    width: 60%;
+  }
+
+  #seemore {
+    top: 500px;
+    width: 120px;
+    font-size: 15px;
+  }
+
+  #videomain {
+    display: block;
+    width: 120%;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 40px;
+    top: auto;
+  }
+
+  .navbuttons {
+    margin-left: 15px;
+    font-size: 12px;
+  }
+}

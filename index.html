@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<title>Jack's Portfolio</title>
+</head>
+<body>
+	<div id="container">
+		<section id="stop1">
+			<nav>
+				<!-- <img id="logo" src="images/logo.png"> -->
+				<a class="navbuttons" href="#stop1" id="home">HOME</a>
+				<a class="navbuttons" href="#stop2" id="projects">PROJECTS</a>
+				<a class="navbuttons" href="#stop3" id="about">ABOUT</a>
+				<a class="navbuttons" href="#stop4" id="contact">CONTACT</a>
+				
+			</nav>
+			
+			<h1>Jack Hughes Portfolio</h1>
+			<p>Full-Stack Web Developer with proficiency in multiple coding languages.</p>
+			
+			<video id="videomain" src="videos/spiral.mp4"></video>
+			<a href="#stop2" id="seemore">See more</a>
+		</section>
+		
+		<section id="stop2">
+			<h1 style="top: 10px;">Projects</h1>
+			
+			<div id="options">
+				<a onclick="option1clicked()" class="optionsclass" id="option1">WEBSITES</a>
+				<a class="optionsclass" id="option2">CYBER SECURITY</a>
+				<a class="optionsclass" id="option3">C++</a>
+				<a class="optionsclass" id="option4">JAILBREAK</a>
+			</div>
+			
+			<div id="optionslist">
+				<div class="examples">
+					<div class="informationstrip">Kanns</div>
+					<img src="images/1.png">
+				</div>
+				<div class="examples">
+					<div class="informationstrip">Website 2</div>
+					<img src="images/2.png">
+				</div>
+				<div class="examples">
+					<div class="informationstrip">Website 3</div>
+					<img src="images/3.png">
+				</div>
+				<!-- <div class="examples">
+					<div class="informationstrip">Website 4</div>
+				</div> -->
+			</div>
+		</section>
+		
+		<section id="stop3">
+			<h1 style="top: 10px;">About</h1>
+		</section>
+		
+		<section id="stop4">
+			<h1 style="top: 10px;">Contact</h1>
+			
+			<form action="https://api.staticforms.xyz/submit" method="post">
+				<input type="hidden" name="accessKey" value="4ae417eb-9a90-4ef8-8ef5-4377f0db1350">
+				<input placeholder="Name" type="text" name="name">
+				<input placeholder="Email" type="text" name="email">
+				<input placeholder="Subject" type="text" name="subject">
+				<textarea placeholder="Message" name="message"></textarea>
+				<input type="hidden" name="replyTo" value="@">
+				<input type="hidden" name="redirectTo" value="index.html">
+				<input type="submit" value="Submit" />
+			</form>
+		</section>
+	</div>
+</body>
+<script src="scripts/index.js"></script>
+</body>
+</html>
