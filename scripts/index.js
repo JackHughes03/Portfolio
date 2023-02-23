@@ -4,12 +4,12 @@ video.loop = true;
 video.muted = true;
 video.play();
 
-function option1clicked() {
-    var optionslist = document.getElementById("optionslist");
+var navbuttons = document.getElementsByClassName("navbuttons");
 
-    if(optionslist.style.display === "grid") {
-        optionslist.style.display = "none";
-    } else {
-        optionslist.style.display = "grid";
+const hamBurger = document.querySelector('.ham8');
+hamBurger.addEventListener('click', () => {
+    // display navbuttons
+    for (var i = 0; i < navbuttons.length; i++) {
+        navbuttons[i].style.display = "block";
     }
-}
+});
