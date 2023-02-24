@@ -328,6 +328,14 @@ h3 {
   width: 200px;
 }
 
+footer {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
 @media screen and (max-width: 1300px) {
   #mailimage {
     width: 300px;
