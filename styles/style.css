@@ -179,7 +179,7 @@ section {
   justify-content: center;
 }
 
-img {
+.websiteimages {
   width: 100%;
   height: 75%;
   object-fit: cover;
@@ -188,35 +188,70 @@ img {
 }
 
 form {
-  width: 500px;
+  width: 300px;
   margin: 0 auto;
   text-align: center;
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-top: 300px;
+  position: absolute;
+  left: 90%;
+  top: 50%;
+  transform: translate(-90%, -50%);
 }
 
 input[type="text"], textarea {
-  width: 100%;
-  padding: 10px;
+  width: 110%;
+  background-color: #cfcfcf;
+  padding: 12px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 18px;
+  border-radius: 25px;
+  font-size: 15px;
   box-sizing: border-box;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   max-width: 500px;
 }
 
+textarea {
+  resize: vertical;
+  min-height: 150px;
+  height: 150px;
+}
+
 input[type="submit"] {
   background-color: rgb(166, 84, 201);
   color: white;
-  padding: 10px 20px;
+  padding: 10px 50px;
   border: none;
-  border-radius: 5px;
+  border-radius: 35px;
   font-size: 18px;
   cursor: pointer;
+  margin-left: 40px;
+  transition: 300ms;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(30, 35, 40);
+}
+
+#backgroundform {
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 70%;
+  height: 40%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1000px;
+}
+
+#mailimage {
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-20%, -50%);
+  transition: 100ms;
 }
 
 /* .menu {
@@ -335,7 +370,38 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1300px) {
+  #mailimage {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #mailimage {
+    width: 250px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
+  #mailimage {
+    display: none;
+  }
+
+  #backgroundform {
+    width: 400px;
+  }
+
+  form {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: -10px;
+  }
+
+  input[type="submit"] {
+    margin-left: 20px;
+  }
+
   #videomain {
     display: none;
   }
