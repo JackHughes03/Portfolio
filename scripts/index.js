@@ -13,12 +13,12 @@ hamBurger.addEventListener('click', () => {
     if(navbuttons[0].style.display === "block") {
     for (var i = 0; i < navbuttons.length; i++) {
         navbuttons[i].style.display = "none";
-        navbuttonsback.style.display = "none";
     }
+    navbuttonsback.style.display = "none";
     } else {
         for (var i = 0; i < navbuttons.length; i++) {
             navbuttons[i].style.display = "block";
-            navbuttonsback.style.display = "block";
         }
+        navbuttonsback.style.display = "block";
     }
 });

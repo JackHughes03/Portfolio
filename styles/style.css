@@ -28,7 +28,14 @@ nav {
 }
 
 #navbuttonsback {
+  height: 170px;
+  width: 100px;
+  position: absolute;
+  right: 20px;
+  background-color: #ddd;
+  border-radius: 5px;
   display: none;
+  top: 0px;
 }
 
 #logo {
@@ -370,16 +377,22 @@ input[type="submit"] {
   }
 }
 
-@media screen and (max-width: 550px) {
-  #navbuttonsback {
-    height: 170px;
-    width: 100px;
-    position: absolute;
-    right: 20px;
-    background-color: #ddd;
-    border-radius: 5px;
+@media screen and (min-width: 550px) {
+  .navbuttons {
+    display: block;
+    color: white;
+    display: inline-block;
   }
+  
+  #navbuttonsback {
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    height: 10px;
+  }
+}
 
+@media screen and (max-width: 550px) {
   .navbuttons {
     color: black;
     display: none;
