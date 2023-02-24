@@ -568,6 +568,16 @@ input[type="submit"]:hover {
   }
 }
 
+@media screen and (max-width: 650px) {
+  #backgroundform {
+    width: 80%;
+  }
+
+  form {
+    width: 70%;
+  }
+}
+
 @media screen and (min-width: 550px) {
   .navbuttons {
     display: block;
