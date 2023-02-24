@@ -22,3 +22,11 @@ hamBurger.addEventListener('click', () => {
         navbuttonsback.style.display = "block";
     }
 });
+
+function playpause() {
+    if (video.paused) {
+        video.play();
+    } else {
+        video.pause();
+    }
+}

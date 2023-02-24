@@ -320,6 +320,21 @@ input[type="submit"] {
   stroke-dashoffset: -64px;
 }
 
+#pauseplay {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  background-color: #ffffff60;
+  transition: 200ms;
+  right: 250px;
+  top: 450px;
+}
+#pauseplay:hover {
+  background-color: #945959;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1000px) {
   #videomain {
     display: none;
@@ -369,6 +384,14 @@ input[type="submit"] {
     transform: translate(-50%);
     bottom: 40px;
     top: auto;
+  }
+
+  #pauseplay {
+    top: auto;
+    position: absolute;
+    bottom: 40vw;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   .navbuttons {
