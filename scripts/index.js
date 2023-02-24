@@ -30,3 +30,6 @@ function playpause() {
         video.pause();
     }
 }
+
+var formHeight = document.querySelector('form').clientHeight;
+document.querySelector('#backgroundform').style.height = (formHeight + 50) + 'px';
