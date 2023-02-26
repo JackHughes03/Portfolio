@@ -48,7 +48,7 @@ h1 {
   position: absolute;
   font-size: 80px;
   font-weight: lighter;
-  top: 200px;
+  top: 190px;
   width: 20px;
   left: 100px;
   transition: 150ms;
@@ -164,7 +164,7 @@ section {
   align-items: center;
   justify-content: center;
   top: 650px;
-  left: 100px;
+  left: 95px;
   transition: 150ms;
   text-decoration: none;
   background-size: 200% 200%;
@@ -393,6 +393,18 @@ footer {
   width: 210px;
 }
 
+@media screen and (min-width: 1800px) {
+  #seemore {
+    top: 610px;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  #seemore {
+    top: 620px;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   #mailimage {
     width: 300px;
@@ -402,6 +414,12 @@ footer {
 @media screen and (max-width: 1200px) {
   #mailimage {
     width: 250px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  #seemore {
+    top: 640px;
   }
 }
 
