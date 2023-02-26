@@ -525,6 +525,11 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
+  #contactimagesdiv {
+    top: 400px;
+    left: 50px;
+  }
+
   .navbuttons {
     color: black;
     display: none;
@@ -543,19 +548,19 @@ footer {
 
   h1 {
     font-size: 40px;
-    top: 20px;
+    top: 50px;
     left: 50px;
   }
   
   p {
     font-size: 15px;
-    top: 200px;
+    top: 230px;
     left: 50px;
     width: 60%;
   }
 
   #seemore {
-    top: 320px;
+    top: 330px;
     left: 50px;
     width: 110px;
     height: 25px;
