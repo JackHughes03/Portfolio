@@ -128,7 +128,7 @@ html::-webkit-scrollbar-track, html::-webkit-scrollbar {
   border: none;
   color: white;
   position: absolute;
-  right: 10px;
+  left: 10px;
   top: -25px;
   height: 25px;
   cursor: pointer;
