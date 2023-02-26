@@ -4,13 +4,17 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<script type="text/javascript" src= "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<title>Jack's Portfolio</title>
 </head>
 <body>
 	<div id="container">
 		<section id="stop1">
+			<div id="google_translate_element"></div>
+
 			<nav>
+				<button class="languagechange" onclick="changefr()"><img  class="languagechange" src="images/google.png"></button>
 				<!-- <img id="logo" src="images/logo.png"> -->
 				<div id="navbuttonsback">
 					<a class="navbuttons" href="#stop1" id="home">HOME</a>
@@ -40,16 +44,21 @@
 					</svg>
 				</nav>
 				
-				
 				<h1>Jack Hughes Portfolio</h1>
 				<p>Full-Stack Web Developer with proficiency in multiple coding languages.</p>
 				
 				<video id="videomain" src="videos/spiral.mp4" playsinline>Your browser doesn't support the video tag</video>
 				<!-- <button onclick="playpause()" id="pauseplay"></button> -->
 				<a href="#stop2" id="seemore">See more</a>
+				
+				<div id="contactimagesdiv">
+					<img class="contactimages" src="images/github.png">
+					<img class="contactimages" src="images/mail.png">
+					<img class="contactimages" src="images/linkedin.png">
+				</div>
 			</section>
 			
-			<section id="stop2" style="background-color: rgb(5, 10, 15);">
+			<section id="stop2" style="background-color: #111111;">
 				<h1 style="top: 10px;">Projects</h1>
 				
 				<!-- <div id="options">
@@ -75,11 +84,11 @@
 				</div> -->
 			</section>
 			
-			<section id="stop3" style="background-color: rgb(10, 15, 20);">
+			<section id="stop3" style="background-color: #111111;">
 				<h1 style="top: 10px;">About</h1>
 			</section>
 			
-			<section id="stop4" style="background-color: rgb(15, 20, 25);">
+			<section id="stop4" style="background-color: #111111;">
 				<h1 style="top: 10px;">Contact</h1>
 				
 				<div id="backgroundform">
@@ -96,7 +105,7 @@
 						<input type="submit" value="Send ➟" />
 					</form>
 				</div>
-
+				
 				<footer>Proudly hosted by Antoine's Mother</footer>
 			</section>
 		</div>
